@@ -27,12 +27,15 @@ A = B( :, 1:stride:n );
 % Replace the comments below with their respective operations from the notebook
     
 % C = A^T A
+C = A'*A;
 
     
 % V = A^T B
+V = A'*B;
 
     
 % Overwrite C with its LU factorization
+C = LU_unb_var5( C );
 
 
 % Extract the unit lower triangular matrix L and upper triangular matrix U.
